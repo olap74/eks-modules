@@ -63,7 +63,7 @@ Besides, the module provides a very detailed output because every output variabl
 | <a name="input_external_vpc_id"></a> [external\_vpc\_id](#input\_external\_vpc\_id) | external vpc id | `string` | `null` | no |
 | <a name="input_name"></a> [name](#input\_name) | override vpc name | `string` | `null` | no |
 | <a name="input_one_nat_gateway_per_az"></a> [one\_nat\_gateway\_per\_az](#input\_one\_nat\_gateway\_per\_az) | boolean flag to enable dedicated nat gateways per availability zone | `bool` | `true` | no |
-| <a name="input_owner"></a> [owner](#input\_owner) | sailpoint team name (owner reference) | `string` | `null` | no |
+| <a name="input_owner"></a> [owner](#input\_owner) | responsible team name (owner reference) | `string` | `null` | no |
 | <a name="input_private_subnets"></a> [private\_subnets](#input\_private\_subnets) | list of private subnet cidr ranges by availability zone | `list(string)` | `[]` | no |
 | <a name="input_public_subnets"></a> [public\_subnets](#input\_public\_subnets) | list of public subnet cidr ranges by availability zone | `list(string)` | `[]` | no |
 | <a name="input_remote_state_bucket"></a> [remote\_state\_bucket](#input\_remote\_state\_bucket) | Terraform remote state bucket, filled in by terragrunt | `any` | n/a | yes |

@@ -99,7 +99,7 @@ variable "one_nat_gateway_per_az" {
 }
 
 variable "owner" {
-  description = "sailpoint team name (owner reference)"
+  description = "responsible name (owner reference)"
   type        = string
   default     = null
 }
