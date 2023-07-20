@@ -13,7 +13,7 @@ Data streams are being separated by different folders using prefixes. Configurat
         "prefix2" = "firehose_name2"
     }
 
-
+In case of setting parameters above, the stream `firehose_name1` puts objects to `replica_bucket_name` and this objects are located in `prefix1` directory. The same config will be used for the stream `firehose_name2`.
 
 ## Requirements
 
