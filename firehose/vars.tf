@@ -10,7 +10,7 @@ variable "name_suffix" {
 }
 
 variable "firehose_name" {
-  description = "Map of firehose names. Looks like {short_name = long_name}"
+  description = "Map of firehose names. Looks like {s3_prefix = firehose_name}"
   type = map(string)
   default = {}
 }

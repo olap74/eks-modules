@@ -15,6 +15,14 @@ Data streams are being separated by different folders using prefixes. Configurat
 
 In case of setting parameters above, the stream `firehose_name1` puts objects to `replica_bucket_name` and this objects are located in `prefix1` directory. The same config will be used for the stream `firehose_name2`.
 
+Replication between buckets secured by Default AWS maintained KMS key which ARN looks like `arn:aws:kms:REGION:ACCOUNT_ID:alias/aws/s3`. Replication for Buckets is enabled also. So all objecta are well secured. All buckets are being created as private buckets without any public access.
+
+`input_name_suffix` variable can be used as a suffix for all names. In case if you have different environments in the same AWS region and account.
+
+Firehose logs are being pushed to CloudWatch. All required resources are being created by this module also.
+
+Of course, you can setup retention for bucket objects and logs using variables (see the documentation)
+
 ## Requirements
 
 No requirements.
