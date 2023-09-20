@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DynamoAccess",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:BatchGetItem",
+                "dynamodb:BatchWriteItem",
+                "dynamodb:PutItem",
+                "dynamodb:DeleteItem",
+                "dynamodb:PartiQLUpdate",
+                "dynamodb:Scan",
+                "dynamodb:ListTagsOfResource",
+                "dynamodb:Query",
+                "dynamodb:UpdateItem",
+                "dynamodb:PartiQLSelect",
+                "dynamodb:DescribeTable",
+                "dynamodb:PartiQLInsert",
+                "dynamodb:GetItem",
+                "dynamodb:ListStreams",
+                "dynamodb:PartiQLDelete",
+                "dynamodb:DescribeStream",
+                "dynamodb:GetShardIterator",
+                "dynamodb:GetRecords"
+            ],
+            "Resource": [
+                "arn:${partition}:dynamodb:${region}:${account}:table/example-*",
+                "arn:${partition}:dynamodb:${region}:${account}:table/example-*/index/*",
+                "arn:${partition}:dynamodb:${region}:${account}:table/example-*/stream/*"
+            ]
+        }
+    ]
+}
